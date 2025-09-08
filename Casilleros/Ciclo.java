@@ -22,9 +22,9 @@ public class Ciclo {
 
                     String ubicacion = manager.registrarPaquete(dest, desc);
                     if (ubicacion != null) {
-                        System.out.println("✅ Paquete registrado en " + ubicacion);
+                        System.out.println(" Paquete registrado en " + ubicacion);
                     } else {
-                        System.out.println("❌ No hay casilleros disponibles.");
+                        System.out.println(" No hay casilleros disponibles.");
                     }
                     break;
 
@@ -48,11 +48,11 @@ public class Ciclo {
                         String id = sc.nextLine().trim().toUpperCase();
                         Casillero c = manager.buscarPorId(id);
                         if (c == null) {
-                            System.out.println("❌ Casillero no encontrado.");
+                            System.out.println(" Casillero no encontrado.");
                         } else if (!c.estaOcupado()) {
-                            System.out.println("ℹ️ El casillero " + id + " está libre.");
+                            System.out.println(" El casillero " + id + " está libre.");
                         } else {
-                            System.out.println("📦 Información del paquete:");
+                            System.out.println(" Información del paquete:");
                             System.out.println(c.getPaquete());
                         }
                     } else if (sub.equals("2")) {
@@ -60,23 +60,23 @@ public class Ciclo {
                         String nombre = sc.nextLine().trim();
                         Casillero c = manager.buscarPorDestinatario(nombre);
                         if (c == null) {
-                            System.out.println("❌ No se encontró paquete para " + nombre);
+                            System.out.println(" No se encontró paquete para " + nombre);
                         } else {
-                            System.out.println("📦 Paquete de " + nombre + " está en " + c.getId());
+                            System.out.println(" Paquete de " + nombre + " está en " + c.getId());
                             System.out.println(c.getPaquete());
                         }
                     } else {
-                        System.out.println("❌ Opción inválida.");
+                        System.out.println("Opción inválida.");
                     }
                     break;
 
                 case "4":
-                    System.out.println("\n👋 Cerrando aplicación...");
+                    System.out.println("\n Cerrando aplicación...");
                     salir = true;
                     break;
 
                 default:
-                    System.out.println("❌ Opción inválida. Intente de nuevo.");
+                    System.out.println(" Opción inválida. Intente de nuevo.");
             }
 
             System.out.println(); // espacio entre menús
@@ -86,7 +86,7 @@ public class Ciclo {
     }
 
     private static void mostrarMenu() {
-        System.out.println("===== 📦 Sistema Casilleros Amazon =====");
+        System.out.println("=====  Sistema Casilleros Amazon =====");
         System.out.println("1. Registrar paquete");
         System.out.println("2. Consultar casilleros disponibles");
         System.out.println("3. Buscar información de un paquete");

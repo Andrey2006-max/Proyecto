@@ -1,5 +1,5 @@
 public class CasilleroManager {
-    private Casillero[][] casilleros; // matriz de casilleros
+    private Casillero[][] casilleros; 
     private int filas;
     private int columnas;
 

@@ -7,7 +7,7 @@ public class Casillero {
     public Casillero(int fila, int columna) {
         this.fila = fila;
         this.columna = columna;
-        this.paquete = null; // null = vacío
+        this.paquete = null; 
     }
 
     
@@ -23,7 +23,7 @@ public class Casillero {
     
     public Paquete liberarPaquete() {
         Paquete temp = paquete;
-        paquete = null; // se libera
+        paquete = null; 
         return temp;
     }
 
