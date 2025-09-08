@@ -4,7 +4,7 @@ public class Ciclo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Creamos el administrador de casilleros con una matriz de 4 filas x 5 columnas
+        
         CasilleroManager manager = new CasilleroManager(4, 5);
 
         boolean salir = false;
@@ -79,7 +79,7 @@ public class Ciclo {
                     System.out.println(" Opción inválida. Intente de nuevo.");
             }
 
-            System.out.println(); // espacio entre menús
+            System.out.println(); 
         }
 
         sc.close();
