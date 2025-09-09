@@ -49,7 +49,7 @@ public class CasilleroManager {
                 System.out.print(casilleros[i][j].estaOcupado() ? "[X] " : "[ ] ");
             }
             System.out.print("   "); 
-            // mostramos identificadores a la derecha
+          
             for (int j = 0; j < columnas; j++) {
                 System.out.print(casilleros[i][j].getId() + " ");
             }
